@@ -4,8 +4,8 @@
   <sonar.organization>ramya4823</sonar.organization>
   <sonar.host.url>https://sonarcloud.io</sonar.host.url>
 </properties>
-  <groupId>JBRC</groupId>
-  <artifactId>JBRC</artifactId>
+  <groupId>chatbot</groupId>
+  <artifactId>chatbot</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <build>
     <sourceDirectory>src</sourceDirectory>
