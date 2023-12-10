@@ -39,22 +39,17 @@ public class RecruiterAssistantChatbot {
 
     private static void assistFindingJobVacancies() {
         System.out.println("Enter your skills:");
-        Scanner scanner = new Scanner(System.in);
-        String skills = scanner.nextLine();
-        // Assume a JobVacancyService class that fetches job vacancies based on skills.
-        JobVacancyService jobVacancyService = new JobVacancyService();
-        jobVacancyService.findJobVacancies(skills);
+        try (Scanner scanner = new Scanner(System.in)) {
+			String skills = scanner.nextLine();
+			// Assume a JobVacancyService class that fetches job vacancies based on skills.
+			JobVacancyService jobVacancyService = new JobVacancyService();
+			jobVacancyService.findJobVacancies(skills);
+		}
     }
 
     // ... (implement other methods for each user story)
 
-    private static void provideCareerGoalsGuidance() {
-        System.out.println("Enter your career aspirations:");
-        Scanner scanner = new Scanner(System.in);
-        String careerGoals = scanner.nextLine();
-        // Add logic to provide guidance on setting realistic career goals.
-        System.out.println("Here are some tips for setting realistic career goals: ...");
-    }
+  
 }
 
 class JobVacancyService {
